@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年常规保障工作数据舱</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23071423'/%3E%3Cpath d='M8 21V13M13 21V9M18 21V15M23 21V11' stroke='%2338bdf8' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<!-- 资源版本号：每次改动 css/js 后更新 v，避免浏览器命中旧缓存 -->
+<link rel="stylesheet" href="css/style.css?v=20261110c">
+</head>
+<body>
+<div class="viewport" id="viewport">
+  <div class="stage" id="stage">
+    <div class="bg-fx"></div>
+
+    <header class="topbar">
+      <div class="tb-left">
+        <div class="clock" id="clock">--:--:--</div>
+        <div class="clock-sub">
+          <span id="today">----</span>
+          <i></i>
+          <span>数据更新 <b id="updated">--</b></span>
+        </div>
+      </div>
+
+      <div class="tb-center">
+        <div class="deco deco-l"><i></i><i></i><i></i></div>
+        <div class="title-box">
+          <h1 id="mainTitle">2026年常规保障工作数据舱</h1>
+          <p id="subTitle">ANNUAL ROUTINE SUPPORT OPERATION COCKPIT</p>
+        </div>
+        <div class="deco deco-r"><i></i><i></i><i></i></div>
+      </div>
+
+      <div class="tb-right">
+        <span class="badge" id="badgeSource"><i class="bi"></i><em>数据源</em><b>--</b></span>
+        <span class="badge" id="badgeScope"><i class="bi"></i><em>统计口径</em><b>--</b></span>
+        <span class="badge live"><i class="pulse"></i>ON&nbsp;LINE</span>
+      </div>
+    </header>
+
+    <main class="layer" id="layer"></main>
+
+    <div class="drawer-mask" id="mask"></div>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="dw-head">
+        <div class="dw-title-wrap">
+          <span class="dw-kicker" id="dwKicker">DETAIL · 明细</span>
+          <h2 id="dwTitle">明细数据</h2>
+          <p class="dw-meta"><span id="dwMeta"></span></p>
+        </div>
+        <div class="dw-actions">
+          <button class="dw-btn" id="btnZoom" title="放大 / 还原">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <span>放大</span>
+          </button>
+          <button class="dw-btn close" id="btnClose" title="关闭">
+            <svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="dw-summary" id="dwSummary"></div>
+
+      <div class="dw-chart-wrap" id="dwChartWrap">
+        <div class="dw-chart" id="dwChart"></div>
+      </div>
+
+      <div class="dw-body" id="dwBody">
+        <table class="dw-table" id="dwTable">
+          <thead id="dwThead"></thead>
+          <tbody id="dwTbody"></tbody>
+        </table>
+      </div>
+
+      <div class="dw-foot">
+        <span id="dwFootL">共 0 条</span>
+        <span id="dwFootR">点击卡片任意位置可再次查看</span>
+      </div>
+    </aside>
+
+    <footer class="stage-foot" id="stageFoot"></footer>
+  </div>
+</div>
+
+<script src="vendor/echarts.min.js"></script>
+<script src="js/fallback.js?v=20261110c"></script>
+<script src="js/app.js?v=20261110c"></script>
+</body>
+</html>
